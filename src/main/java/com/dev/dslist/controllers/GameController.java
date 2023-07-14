@@ -20,8 +20,6 @@ public class GameController {
 
     @Autowired
     private GameService gameService;
-    @Autowired
-    private GameRepository gameRepository;
 
     @GetMapping(value = "/{id}")
     public GameDTO findById(@PathVariable Long id) {
